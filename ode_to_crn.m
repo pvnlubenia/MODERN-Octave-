@@ -67,9 +67,6 @@ function [ode] = ode_to_crn(ode)
         ode.species{end+1} = ode.equation(i).id.var;
     end
 
-    % Get only unique species
-    ode.species = unique(ode.species);
-
     % Count the number of species
     m = numel(ode.species);
 
@@ -85,9 +82,6 @@ function [ode] = ode_to_crn(ode)
     for i = 1:numel(ode.kinetics)
         ode.flux{end+1} = ode.kinetics(i).id.var;
     end
-
-    % Get only unique fluxes
-    ode.flux = unique(ode.flux);
 
     % Count the number of fluxes/reactions
     r = numel(ode.flux);
