@@ -208,9 +208,9 @@ function [ode] = ode_to_crn(ode)
                         
                         % Do not show coefficient if it is 1
                         if B(i, B_nnz(j)) == 1
-                            R = ['R' num2str(i) ': 0 -> ' 'X' num2str(B_nnz(j))];
+                            R = ['R' num2str(i) ': 0 -> ' ode.species{B_nnz(j)}];
                         else
-                            R = ['R' num2str(i) ': 0 -> ' num2str(B(i, B_nnz(j))) 'X' num2str(B_nnz(j))];
+                            R = ['R' num2str(i) ': 0 -> ' num2str(B(i, B_nnz(j))) ode.species{B_nnz(j)}];
                         end
                     
                     % Add the succeeding species into the product complex
@@ -218,9 +218,9 @@ function [ode] = ode_to_crn(ode)
                         
                         % Do not show coefficient if it is 1
                         if B(i, B_nnz(j)) == 1
-                            R = [R '+' 'X' num2str(B_nnz(j))];
+                            R = [R '+' ode.species{B_nnz(j)}];
                         else
-                            R = [R '+' num2str(B(i, B_nnz(j))) 'X' num2str(B_nnz(j))];
+                            R = [R '+' num2str(B(i, B_nnz(j))) ode.species{B_nnz(j)}];
                         end
                     end
                 end
@@ -238,9 +238,9 @@ function [ode] = ode_to_crn(ode)
                     
                     % Do not show coefficient if it is 1
                     if A(i, A_nnz(j)) == 1
-                        R = ['R' num2str(i) ': ' 'X' num2str(A_nnz(j))];
+                        R = ['R' num2str(i) ': ' ode.species{A_nnz(j)}];
                     else
-                        R = ['R' num2str(i) ': ' num2str(A(i, A_nnz(j))) 'X' num2str(A_nnz(j))];
+                        R = ['R' num2str(i) ': ' num2str(A(i, A_nnz(j))) ode.species{A_nnz(j)}];
                     end
                 
                 % Add the succeeding species into the reactant complex
@@ -248,9 +248,9 @@ function [ode] = ode_to_crn(ode)
                     
                     % Do not show coefficient if it is 1
                     if A(i, A_nnz(j)) == 1
-                        R = [R '+' 'X' num2str(A_nnz(j))];
+                        R = [R '+' ode.species{A_nnz(j)}];
                     else
-                       R = [R '+' num2str(A(i, A_nnz(j))) 'X' num2str(A_nnz(j))]; 
+                       R = [R '+' num2str(A(i, A_nnz(j))) ode.species{A_nnz(j)}];
                     end
                 end
             end
@@ -268,9 +268,9 @@ function [ode] = ode_to_crn(ode)
                         
                         % Do not show coefficient if it is 1
                         if B(i, B_nnz(j)) == 1
-                            R = [R ' -> ' 'X' num2str(B_nnz(j))];
+                            R = [R ' -> ' ode.species{B_nnz(j)}];
                         else
-                            R = [R ' -> ' num2str(B(i, B_nnz(j))) 'X' num2str(B_nnz(j))];
+                            R = [R ' -> ' num2str(B(i, B_nnz(j))) ode.species{B_nnz(j)}];
                         end
                     
                     % Add the succeeding species into the product complex
@@ -278,9 +278,9 @@ function [ode] = ode_to_crn(ode)
                         
                         % Do not show coefficient if it is 1
                         if B(i, B_nnz(j)) == 1
-                            R = [R '+' 'X' num2str(B_nnz(j))];
+                            R = [R '+' ode.species{B_nnz(j)}];
                         else
-                            R = [R '+' num2str(B(i, B_nnz(j))) 'X' num2str(B_nnz(j))];
+                            R = [R '+' num2str(B(i, B_nnz(j))) ode.species{B_nnz(j)}];
                         end
                     end
                 end
