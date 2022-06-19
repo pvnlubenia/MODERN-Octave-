@@ -38,7 +38,7 @@ How to fill out 'ode' structure
         - flux: a list of fluxes representing the fluxes in the ODE
         - coeff: a list of numbers representing the coefficient of each flux in the ODE in the left to right direction (listed  in the same order of the fluxes)
 
-Note that It is assumed that the ODE system has mass action kinetics.
+Note that it is assumed that the ODE system has mass action kinetics.
 
 
 
@@ -57,7 +57,7 @@ Contact Information
 For questions, comments, and suggestions, feel free to contact me at pvnlubenia@yahoo.co.uk.
 
 
-- Patrick Lubenia (2 November 2021)
+- Patrick Lubenia (19 June 2022)
 
 
 
@@ -65,4 +65,4 @@ For questions, comments, and suggestions, feel free to contact me at pvnlubenia@
 Reference
 =========
 
-   [1] Chellaboina, V., Bhat, S.P., Haddad, W.M., and Bernstein, D.S. (2009). Modeling and analysis of mass-action kinetics. IEEE Control Systems, 29(4) 60-78. doi:10.1109/MCS.2009.932926.
+   [1] Chellaboina V, Bhat S, Haddad W, Bernstein D (2009) Modeling and analysis of mass-action kinetics. IEEE Control Syst 29(4):60-78. https://doi.org/10.1109/MCS.2009.932926
