@@ -4,13 +4,13 @@
 
 ==========================================================================================
 
-GNU Octave (https://www.gnu.org/software/octave/index) was used to develop the functions used here.
+GNU Octave (https://www.gnu.org/software/octave/index) was used to develop the function used here.
 
 
 
-=========
-Functions
-=========The function ode_to_crn returns the chemical reaction network corresponding to a system of ordinary differential equations (ODEs) with mass action kinetics. If the system does not satisfy the Hars-Toth criterion, a message appears stating what needs to be added in a flux.
+========
+Function
+========The function ode_to_crn returns the chemical reaction network corresponding to a system of ordinary differential equations (ODEs) with mass action kinetics. If the system does not satisfy the Hars-Toth criterion, a message appears stating what needs to be added in a flux.
 
 The output variable 'ode' allows the user to view the complete system of ODEs with all the species and fluxes listed in the 'species' and 'flux' fields, respectively.
 
